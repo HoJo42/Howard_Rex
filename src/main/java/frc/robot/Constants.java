@@ -63,6 +63,15 @@ public final class Constants {
     public static final double kP = 0;
     public static final double kI = 0;
     public static final double kD = 0;
+        public enum ArmPositions{
+            REST(0),
+            SHOOT(0), //fill with actual encoder position
+            AMP(0); //fill with actual encoder position
+            public double position;
+            private ArmPositions (double position) {
+                this.position = position;
+            }
+        }
 
     public static final double kArmUpSetPoint = 0;
     public static final double kShootingPositionSetPoint = 0;
